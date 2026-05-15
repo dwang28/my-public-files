@@ -1,0 +1,180 @@
+:root {
+  --parchment: #f5f4ed;     /* Page background: warm paper, never pure white */
+  --ivory: #faf9f5;         /* Cards/code blocks: slightly lifted surface */
+  --sand: #e8e6dc;          /* Borders/dividers: warm gray-beige */
+  --sand-soft: #e5e3d8;     /* Softer row separators */
+  --brand: #1B365D;         /* Ink blue: main accent, links, title bars */
+  --ink-light: #2D5A8A;     /* Lighter ink blue for hover states */
+  --near-black: #141413;    /* Primary text: warm near-black */
+  --dark-warm: #3d3d3a;     /* Secondary text */
+  --olive: #504e49;         /* Muted descriptions */
+  --stone: #6b6a64;         /* Metadata / subtle text */
+  --tag-blue: #EEF2F7;      /* Pale blue tag/code background */
+  /* My custom color starts here */
+  --warm-red: #ea4f36;
+}
+
+body {
+  font-family: Charter, Georgia, Palatino, "Times New Roman", "Songti SC", serif;
+  color: var(--near-black);
+  background: var(--parchment);
+  line-height: 1.55;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 32px;
+  font-weight: 400;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: var(--near-black);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 28px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 36px;
+  margin-bottom: 14px;
+  border-left: 4px solid var(--warm-red); 
+  /* border-left: 4px solid var(--brand);  */
+  padding-left: 12px;
+}
+
+h3 {
+  font-size: 22px;
+  margin-top: 26px;
+  color: var(--dark-warm);
+  padding-left:20px;
+  border-left: 4px solid var(--warm-red);
+}
+
+p, li {
+  font-size: 16px;
+}
+
+a {
+  color: var(--brand);
+  text-decoration: none;
+  border-bottom: 1px solid var(--sand);
+}
+
+a:hover {
+  color: var(--ink-light);
+  border-bottom-color: var(--ink-light);
+}
+
+strong {
+  font-weight: 500; /* Kami avoids heavy bold */
+}
+
+em {
+  font-style: normal; /* Kami avoids italic */
+  color: var(--olive);
+}
+
+blockquote {
+  margin: 24px 0;
+  padding: 8px 0 8px 18px;
+  border-left: 3px solid var(--brand);
+  color: var(--olive);
+  background: transparent;
+}
+
+code {
+  font-family: "JetBrains Mono", "SF Mono", Consolas, Monaco, "Songti SC", monospace;
+  /* background: yellow; */
+  background: var(--tag-blue);
+  color: var(--warm-red);
+  /* color: var(--brand); */
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.92em;
+}
+
+pre code .hljs-property,
+
+pre code .hljs-title,
+
+pre code .hljs-title.function_,
+
+pre code .hljs-title.function_.invoke__,
+
+pre code .hljs-variable,
+
+pre code .hljs-attr,
+
+pre code .hljs-name
+pre code .token.function,
+pre code .method,
+pre code .token.property-access,
+pre code .token.property {
+  color: #ea4205 !important; 
+}
+
+/* Improve overall code readability */
+
+pre code {
+  font-weight: 500;
+}
+
+
+/* Optional: slightly boost contrast for keywords */
+
+code .token.keyword {
+  color: #ff7ab2 !important;
+}
+
+pre {
+  background: var(--ivory);
+  border: 1px solid var(--sand);
+  border-radius: 10px;
+  padding: 16px 18px;
+  overflow-x: auto;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04); /* Whisper shadow */
+}
+
+pre code {
+  background: transparent;
+  color: var(--near-black);
+  padding: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 22px 0;
+  font-size: 15px;
+}
+
+th {
+  text-align: left;
+  font-weight: 500;
+  color: var(--dark-warm);
+  border-bottom: 2px solid var(--sand);
+  padding: 10px 12px;
+  background: var(--ivory);
+}
+
+td {
+  border-bottom: 1px solid var(--sand-soft);
+  padding: 9px 12px;
+  vertical-align: top;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--sand);
+  margin: 36px 0;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--sand);
+  background: var(--ivory);
+}
