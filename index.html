@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VSCode Markdown Styles — Sample</title>
+    <link rel="stylesheet" href="vscode-markdown-styles.css">
+</head>
+<body>
+    <h1>VSCode Markdown Styles — Sample</h1>
+
+    <p>This page exercises every style defined in <code>vscode-markdown-styles.css</code>. It uses a warm parchment background, an ink-blue accent, and a warm-red border to mark section headings.</p>
+
+    <h2>Typography</h2>
+
+    <p>Body copy is set in <strong>Charter</strong> with a fallback to Georgia and Palatino. The line-height is comfortable for reading at 16px. <em>Italic-styled emphasis</em> is rendered upright in a muted olive — the stylesheet deliberately avoids true italics.</p>
+
+    <p>Links such as <a href="#">this inline link</a> use the ink-blue accent with a soft underline that lifts on hover.</p>
+
+    <h3>A Smaller Subhead</h3>
+
+    <p>Subheads share the same warm-red rule as <code>h2</code> but at a lighter weight and a softer text color.</p>
+
+    <h2>Blockquote</h2>
+
+    <blockquote>
+        "Simplicity is the ultimate sophistication." A blockquote uses an ink-blue rule on the left, olive text, and a transparent background.
+    </blockquote>
+
+    <h2>Lists</h2>
+
+    <p>Unordered list:</p>
+    <ul>
+        <li>Parchment-toned page background</li>
+        <li>Ivory surface for cards and code blocks</li>
+        <li>Warm-red accent on section rules</li>
+    </ul>
+
+    <p>Ordered list:</p>
+    <ol>
+        <li>Set the document language and charset</li>
+        <li>Link the stylesheet in the <code>&lt;head&gt;</code></li>
+        <li>Write semantic markdown-shaped HTML</li>
+    </ol>
+
+    <h2>Inline Code &amp; Code Block</h2>
+
+    <p>Inline snippets like <code>const greeting = "hello"</code> sit on a pale-blue chip with a warm-red glyph color.</p>
+
+    <pre><code>function greet(name) {
+  const message = `Hello, ${name}!`;
+  console.log(message);
+  return message;
+}
+
+greet("world");</code></pre>
+
+    <h2>Table</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Token</th>
+                <th>Value</th>
+                <th>Purpose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>--parchment</code></td>
+                <td>#f5f4ed</td>
+                <td>Page background — warm paper</td>
+            </tr>
+            <tr>
+                <td><code>--ivory</code></td>
+                <td>#faf9f5</td>
+                <td>Card and code-block surface</td>
+            </tr>
+            <tr>
+                <td><code>--brand</code></td>
+                <td>#1B365D</td>
+                <td>Ink-blue accent and links</td>
+            </tr>
+            <tr>
+                <td><code>--warm-red</code></td>
+                <td>#ea4f36</td>
+                <td>Heading rules and inline code glyphs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2>Image</h2>
+
+    <p>Images receive a soft border, ivory backdrop, and rounded corners:</p>
+
+    <img src="https://placehold.co/860x320/faf9f5/1B365D?text=Sample+Image" alt="Placeholder sample image">
+
+    <hr>
+
+    <p><em>End of sample.</em></p>
+</body>
+</html>
